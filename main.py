@@ -17,11 +17,11 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
     # 2) Отправить пользователю инструкцию
     await update.message.reply_text(
-        "Готово! Нажмите кнопку слева от поля ввода, чтобы открыть приложение."
+        "Привет! Это приложение онлайн-магистратуры «Науки о данных»."
     )
 
 if __name__ == "__main__":
     app = ApplicationBuilder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", start))
-    print("Bot is running…")
+    print("Поехали!")
     app.run_polling()
