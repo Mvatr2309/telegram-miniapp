@@ -4,7 +4,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 # Ваш токен
 TOKEN = "8152835147:AAGadk_G-pk-UaPLwE0zgKlAi2nifmwd7BQ"
 # URL вашего mini-app
-WEB_APP_URL = "https://mipt.online/masters/data_science"
+WEB_APP_URL = "https://mipt.online/masters/data_science?utm_source=tgapp"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # 1) Установить кнопку рядом с полем ввода
